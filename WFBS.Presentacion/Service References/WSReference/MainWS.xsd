@@ -2,6 +2,8 @@
 <xs:schema xmlns:tns="http://ws.modelo/" targetNamespace="http://ws.modelo/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="Login_Administrador" type="tns:Login_Administrador" />
   <xs:element name="Login_AdministradorResponse" type="tns:Login_AdministradorResponse" />
+  <xs:element name="recuperar_nombre_rol" type="tns:recuperar_nombre_rol" />
+  <xs:element name="recuperar_nombre_rolResponse" type="tns:recuperar_nombre_rolResponse" />
   <xs:element name="recuperar_rol_login" type="tns:recuperar_rol_login" />
   <xs:element name="recuperar_rol_loginResponse" type="tns:recuperar_rol_loginResponse" />
   <xs:complexType name="recuperar_rol_login">
@@ -19,6 +21,16 @@
   <xs:complexType name="recuperar_rol_loginResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recuperar_nombre_rol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="user" type="tns:clUsuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recuperar_nombre_rolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Login_Administrador">

@@ -16,15 +16,6 @@ namespace WFBS.Presentacion.WSReference {
     public interface MainWS {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.modelo/MainWS/Login_AdministradorRequest", ReplyAction="http://ws.modelo/MainWS/Login_AdministradorResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WFBS.Presentacion.WSReference.Login_AdministradorResponse Login_Administrador(WFBS.Presentacion.WSReference.Login_AdministradorRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.modelo/MainWS/Login_AdministradorRequest", ReplyAction="http://ws.modelo/MainWS/Login_AdministradorResponse")]
-        System.Threading.Tasks.Task<WFBS.Presentacion.WSReference.Login_AdministradorResponse> Login_AdministradorAsync(WFBS.Presentacion.WSReference.Login_AdministradorRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.modelo/MainWS/recuperar_rol_loginRequest", ReplyAction="http://ws.modelo/MainWS/recuperar_rol_loginResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -32,6 +23,24 @@ namespace WFBS.Presentacion.WSReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.modelo/MainWS/recuperar_rol_loginRequest", ReplyAction="http://ws.modelo/MainWS/recuperar_rol_loginResponse")]
         System.Threading.Tasks.Task<WFBS.Presentacion.WSReference.recuperar_rol_loginResponse> recuperar_rol_loginAsync(WFBS.Presentacion.WSReference.recuperar_rol_loginRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.modelo/MainWS/recuperar_nombre_rolRequest", ReplyAction="http://ws.modelo/MainWS/recuperar_nombre_rolResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WFBS.Presentacion.WSReference.recuperar_nombre_rolResponse recuperar_nombre_rol(WFBS.Presentacion.WSReference.recuperar_nombre_rolRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.modelo/MainWS/recuperar_nombre_rolRequest", ReplyAction="http://ws.modelo/MainWS/recuperar_nombre_rolResponse")]
+        System.Threading.Tasks.Task<WFBS.Presentacion.WSReference.recuperar_nombre_rolResponse> recuperar_nombre_rolAsync(WFBS.Presentacion.WSReference.recuperar_nombre_rolRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.modelo/MainWS/Login_AdministradorRequest", ReplyAction="http://ws.modelo/MainWS/Login_AdministradorResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WFBS.Presentacion.WSReference.Login_AdministradorResponse Login_Administrador(WFBS.Presentacion.WSReference.Login_AdministradorRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.modelo/MainWS/Login_AdministradorRequest", ReplyAction="http://ws.modelo/MainWS/Login_AdministradorResponse")]
+        System.Threading.Tasks.Task<WFBS.Presentacion.WSReference.Login_AdministradorResponse> Login_AdministradorAsync(WFBS.Presentacion.WSReference.Login_AdministradorRequest request);
     }
     
     /// <remarks/>
@@ -97,42 +106,6 @@ namespace WFBS.Presentacion.WSReference {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Login_Administrador", WrapperNamespace="http://ws.modelo/", IsWrapped=true)]
-    public partial class Login_AdministradorRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.modelo/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WFBS.Presentacion.WSReference.clUsuario user;
-        
-        public Login_AdministradorRequest() {
-        }
-        
-        public Login_AdministradorRequest(WFBS.Presentacion.WSReference.clUsuario user) {
-            this.user = user;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Login_AdministradorResponse", WrapperNamespace="http://ws.modelo/", IsWrapped=true)]
-    public partial class Login_AdministradorResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.modelo/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public Login_AdministradorResponse() {
-        }
-        
-        public Login_AdministradorResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="recuperar_rol_login", WrapperNamespace="http://ws.modelo/", IsWrapped=true)]
     public partial class recuperar_rol_loginRequest {
         
@@ -166,6 +139,78 @@ namespace WFBS.Presentacion.WSReference {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recuperar_nombre_rol", WrapperNamespace="http://ws.modelo/", IsWrapped=true)]
+    public partial class recuperar_nombre_rolRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.modelo/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public WFBS.Presentacion.WSReference.clUsuario user;
+        
+        public recuperar_nombre_rolRequest() {
+        }
+        
+        public recuperar_nombre_rolRequest(WFBS.Presentacion.WSReference.clUsuario user) {
+            this.user = user;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recuperar_nombre_rolResponse", WrapperNamespace="http://ws.modelo/", IsWrapped=true)]
+    public partial class recuperar_nombre_rolResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.modelo/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string @return;
+        
+        public recuperar_nombre_rolResponse() {
+        }
+        
+        public recuperar_nombre_rolResponse(string @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Login_Administrador", WrapperNamespace="http://ws.modelo/", IsWrapped=true)]
+    public partial class Login_AdministradorRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.modelo/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public WFBS.Presentacion.WSReference.clUsuario user;
+        
+        public Login_AdministradorRequest() {
+        }
+        
+        public Login_AdministradorRequest(WFBS.Presentacion.WSReference.clUsuario user) {
+            this.user = user;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Login_AdministradorResponse", WrapperNamespace="http://ws.modelo/", IsWrapped=true)]
+    public partial class Login_AdministradorResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.modelo/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public Login_AdministradorResponse() {
+        }
+        
+        public Login_AdministradorResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface MainWSChannel : WFBS.Presentacion.WSReference.MainWS, System.ServiceModel.IClientChannel {
     }
@@ -194,29 +239,6 @@ namespace WFBS.Presentacion.WSReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WFBS.Presentacion.WSReference.Login_AdministradorResponse WFBS.Presentacion.WSReference.MainWS.Login_Administrador(WFBS.Presentacion.WSReference.Login_AdministradorRequest request) {
-            return base.Channel.Login_Administrador(request);
-        }
-        
-        public bool Login_Administrador(WFBS.Presentacion.WSReference.clUsuario user) {
-            WFBS.Presentacion.WSReference.Login_AdministradorRequest inValue = new WFBS.Presentacion.WSReference.Login_AdministradorRequest();
-            inValue.user = user;
-            WFBS.Presentacion.WSReference.Login_AdministradorResponse retVal = ((WFBS.Presentacion.WSReference.MainWS)(this)).Login_Administrador(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WFBS.Presentacion.WSReference.Login_AdministradorResponse> WFBS.Presentacion.WSReference.MainWS.Login_AdministradorAsync(WFBS.Presentacion.WSReference.Login_AdministradorRequest request) {
-            return base.Channel.Login_AdministradorAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<WFBS.Presentacion.WSReference.Login_AdministradorResponse> Login_AdministradorAsync(WFBS.Presentacion.WSReference.clUsuario user) {
-            WFBS.Presentacion.WSReference.Login_AdministradorRequest inValue = new WFBS.Presentacion.WSReference.Login_AdministradorRequest();
-            inValue.user = user;
-            return ((WFBS.Presentacion.WSReference.MainWS)(this)).Login_AdministradorAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         WFBS.Presentacion.WSReference.recuperar_rol_loginResponse WFBS.Presentacion.WSReference.MainWS.recuperar_rol_login(WFBS.Presentacion.WSReference.recuperar_rol_loginRequest request) {
             return base.Channel.recuperar_rol_login(request);
         }
@@ -237,6 +259,52 @@ namespace WFBS.Presentacion.WSReference {
             WFBS.Presentacion.WSReference.recuperar_rol_loginRequest inValue = new WFBS.Presentacion.WSReference.recuperar_rol_loginRequest();
             inValue.user = user;
             return ((WFBS.Presentacion.WSReference.MainWS)(this)).recuperar_rol_loginAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WFBS.Presentacion.WSReference.recuperar_nombre_rolResponse WFBS.Presentacion.WSReference.MainWS.recuperar_nombre_rol(WFBS.Presentacion.WSReference.recuperar_nombre_rolRequest request) {
+            return base.Channel.recuperar_nombre_rol(request);
+        }
+        
+        public string recuperar_nombre_rol(WFBS.Presentacion.WSReference.clUsuario user) {
+            WFBS.Presentacion.WSReference.recuperar_nombre_rolRequest inValue = new WFBS.Presentacion.WSReference.recuperar_nombre_rolRequest();
+            inValue.user = user;
+            WFBS.Presentacion.WSReference.recuperar_nombre_rolResponse retVal = ((WFBS.Presentacion.WSReference.MainWS)(this)).recuperar_nombre_rol(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WFBS.Presentacion.WSReference.recuperar_nombre_rolResponse> WFBS.Presentacion.WSReference.MainWS.recuperar_nombre_rolAsync(WFBS.Presentacion.WSReference.recuperar_nombre_rolRequest request) {
+            return base.Channel.recuperar_nombre_rolAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WFBS.Presentacion.WSReference.recuperar_nombre_rolResponse> recuperar_nombre_rolAsync(WFBS.Presentacion.WSReference.clUsuario user) {
+            WFBS.Presentacion.WSReference.recuperar_nombre_rolRequest inValue = new WFBS.Presentacion.WSReference.recuperar_nombre_rolRequest();
+            inValue.user = user;
+            return ((WFBS.Presentacion.WSReference.MainWS)(this)).recuperar_nombre_rolAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WFBS.Presentacion.WSReference.Login_AdministradorResponse WFBS.Presentacion.WSReference.MainWS.Login_Administrador(WFBS.Presentacion.WSReference.Login_AdministradorRequest request) {
+            return base.Channel.Login_Administrador(request);
+        }
+        
+        public bool Login_Administrador(WFBS.Presentacion.WSReference.clUsuario user) {
+            WFBS.Presentacion.WSReference.Login_AdministradorRequest inValue = new WFBS.Presentacion.WSReference.Login_AdministradorRequest();
+            inValue.user = user;
+            WFBS.Presentacion.WSReference.Login_AdministradorResponse retVal = ((WFBS.Presentacion.WSReference.MainWS)(this)).Login_Administrador(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WFBS.Presentacion.WSReference.Login_AdministradorResponse> WFBS.Presentacion.WSReference.MainWS.Login_AdministradorAsync(WFBS.Presentacion.WSReference.Login_AdministradorRequest request) {
+            return base.Channel.Login_AdministradorAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WFBS.Presentacion.WSReference.Login_AdministradorResponse> Login_AdministradorAsync(WFBS.Presentacion.WSReference.clUsuario user) {
+            WFBS.Presentacion.WSReference.Login_AdministradorRequest inValue = new WFBS.Presentacion.WSReference.Login_AdministradorRequest();
+            inValue.user = user;
+            return ((WFBS.Presentacion.WSReference.MainWS)(this)).Login_AdministradorAsync(inValue);
         }
     }
 }

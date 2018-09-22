@@ -10,7 +10,9 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
 
+
 using System.Threading;
+using WFBS.Presentacion.Formularios;
 
 namespace WFBS.Presentacion
 {
@@ -86,6 +88,7 @@ namespace WFBS.Presentacion
                     if (WS.Login_Administrador(usu))
                     {
                         int rol = WS.recuperar_rol_login(usu);
+                        usu.rol = rol;
 
                         if (rol != 3)
                         {
@@ -95,8 +98,11 @@ namespace WFBS.Presentacion
                         {
                             try
                             {
-                                //FormularioPrincipal ini = new FormularioPrincipal();
-                                //ini.Show();
+
+                                FormularioPrincipal ini = new FormularioPrincipal();
+                                ini.lbl_run.Text = txt_user.Text;
+                                ini.lblPerfil.Text = WS.recuperar_nombre_rol(usu);
+                                ini.Show();
                             }
                             catch (Exception ex)
                             {
@@ -107,8 +113,6 @@ namespace WFBS.Presentacion
                             {
                                 this.Hide();
                             }
-                       
-                           
                         }
                     }
 

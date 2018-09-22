@@ -63,6 +63,26 @@ namespace WFBS.Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_actualizar_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-actualizar-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_apagar_24_1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-apagar-24(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_cerrar_ventana_24_1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-cerrar-ventana-24(1)", resourceCulture);
@@ -93,9 +113,29 @@ namespace WFBS.Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_gerente_961 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-gerente-961", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_hombre_de_negocios_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-hombre-de-negocios-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_hombre_de_negocios_961 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-hombre-de-negocios-961", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,6 +183,16 @@ namespace WFBS.Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_reporte_de_negocios_24_1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-reporte-de-negocios-24(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_restaurar_ventana_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-restaurar-ventana-24", resourceCulture);
@@ -153,9 +203,59 @@ namespace WFBS.Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_sincronizar_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sincronizar-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_tarjeta_de_empleado_24_1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-tarjeta-de-empleado-24(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_tarjeta_de_empleado_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-tarjeta-de-empleado-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_test_aprobado_24_1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-test-aprobado-24(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_trofeo_24_1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-trofeo-24(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_usuario_de_género_neutro_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-usuario-de-género-neutro-24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +316,16 @@ namespace WFBS.Presentacion.Properties {
         internal static System.Drawing.Bitmap WFBS_5_ {
             get {
                 object obj = ResourceManager.GetObject("WFBS(5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WFBS_5_1 {
+            get {
+                object obj = ResourceManager.GetObject("WFBS(5)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

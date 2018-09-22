@@ -5,31 +5,41 @@
       <xsd:import schemaLocation="http://localhost:8084/WFBSWebService/MainWS?xsd=1" namespace="http://ws.modelo/" />
     </xsd:schema>
   </types>
-  <message name="Login_Administrador">
-    <part name="parameters" element="tns:Login_Administrador" />
-  </message>
-  <message name="Login_AdministradorResponse">
-    <part name="parameters" element="tns:Login_AdministradorResponse" />
-  </message>
   <message name="recuperar_rol_login">
     <part name="parameters" element="tns:recuperar_rol_login" />
   </message>
   <message name="recuperar_rol_loginResponse">
     <part name="parameters" element="tns:recuperar_rol_loginResponse" />
   </message>
+  <message name="recuperar_nombre_rol">
+    <part name="parameters" element="tns:recuperar_nombre_rol" />
+  </message>
+  <message name="recuperar_nombre_rolResponse">
+    <part name="parameters" element="tns:recuperar_nombre_rolResponse" />
+  </message>
+  <message name="Login_Administrador">
+    <part name="parameters" element="tns:Login_Administrador" />
+  </message>
+  <message name="Login_AdministradorResponse">
+    <part name="parameters" element="tns:Login_AdministradorResponse" />
+  </message>
   <portType name="MainWS">
-    <operation name="Login_Administrador">
-      <input wsam:Action="http://ws.modelo/MainWS/Login_AdministradorRequest" message="tns:Login_Administrador" />
-      <output wsam:Action="http://ws.modelo/MainWS/Login_AdministradorResponse" message="tns:Login_AdministradorResponse" />
-    </operation>
     <operation name="recuperar_rol_login">
       <input wsam:Action="http://ws.modelo/MainWS/recuperar_rol_loginRequest" message="tns:recuperar_rol_login" />
       <output wsam:Action="http://ws.modelo/MainWS/recuperar_rol_loginResponse" message="tns:recuperar_rol_loginResponse" />
     </operation>
+    <operation name="recuperar_nombre_rol">
+      <input wsam:Action="http://ws.modelo/MainWS/recuperar_nombre_rolRequest" message="tns:recuperar_nombre_rol" />
+      <output wsam:Action="http://ws.modelo/MainWS/recuperar_nombre_rolResponse" message="tns:recuperar_nombre_rolResponse" />
+    </operation>
+    <operation name="Login_Administrador">
+      <input wsam:Action="http://ws.modelo/MainWS/Login_AdministradorRequest" message="tns:Login_Administrador" />
+      <output wsam:Action="http://ws.modelo/MainWS/Login_AdministradorResponse" message="tns:Login_AdministradorResponse" />
+    </operation>
   </portType>
   <binding name="MainWSPortBinding" type="tns:MainWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="Login_Administrador">
+    <operation name="recuperar_rol_login">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -38,7 +48,16 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="recuperar_rol_login">
+    <operation name="recuperar_nombre_rol">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Login_Administrador">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
