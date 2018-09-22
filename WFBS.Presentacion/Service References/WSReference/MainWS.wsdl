@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://ws.modelo/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MainWS" targetNamespace="http://ws.modelo/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8084/WFBSWebService/MainWS?xsd=1" namespace="http://ws.modelo/" />
+    </xsd:schema>
+  </types>
+  <message name="Login_Administrador">
+    <part name="parameters" element="tns:Login_Administrador" />
+  </message>
+  <message name="Login_AdministradorResponse">
+    <part name="parameters" element="tns:Login_AdministradorResponse" />
+  </message>
+  <message name="recuperar_rol_login">
+    <part name="parameters" element="tns:recuperar_rol_login" />
+  </message>
+  <message name="recuperar_rol_loginResponse">
+    <part name="parameters" element="tns:recuperar_rol_loginResponse" />
+  </message>
+  <portType name="MainWS">
+    <operation name="Login_Administrador">
+      <input wsam:Action="http://ws.modelo/MainWS/Login_AdministradorRequest" message="tns:Login_Administrador" />
+      <output wsam:Action="http://ws.modelo/MainWS/Login_AdministradorResponse" message="tns:Login_AdministradorResponse" />
+    </operation>
+    <operation name="recuperar_rol_login">
+      <input wsam:Action="http://ws.modelo/MainWS/recuperar_rol_loginRequest" message="tns:recuperar_rol_login" />
+      <output wsam:Action="http://ws.modelo/MainWS/recuperar_rol_loginResponse" message="tns:recuperar_rol_loginResponse" />
+    </operation>
+  </portType>
+  <binding name="MainWSPortBinding" type="tns:MainWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="Login_Administrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="recuperar_rol_login">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="MainWS">
+    <port name="MainWSPort" binding="tns:MainWSPortBinding">
+      <soap:address location="http://localhost:8084/WFBSWebService/MainWS" />
+    </port>
+  </service>
+</definitions>
