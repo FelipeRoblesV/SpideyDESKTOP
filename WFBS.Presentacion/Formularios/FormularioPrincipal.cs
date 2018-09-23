@@ -261,7 +261,7 @@ namespace WFBS.Presentacion.Formularios
 
         private void CloseForms(object sender, FormClosedEventArgs e)
         {
-            if (Application.OpenForms["Form1"] == null)
+            if (Application.OpenForms["FuncionarioPrincipal"] == null)
             btnFuncionario.BackColor = Color.FromArgb(50, 50, 120);
             //if (Application.OpenForms["Form2"] == null)
             //    button2.BackColor = Color.FromArgb(4, 41, 68);

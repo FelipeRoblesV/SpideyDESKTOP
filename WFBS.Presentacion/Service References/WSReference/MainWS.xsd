@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://ws.modelo/" targetNamespace="http://ws.modelo/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Listar_Jefe_Funcionarios_desktop" type="tns:Listar_Jefe_Funcionarios_desktop" />
+  <xs:element name="Listar_Jefe_Funcionarios_desktopResponse" type="tns:Listar_Jefe_Funcionarios_desktopResponse" />
   <xs:element name="Login_Administrador" type="tns:Login_Administrador" />
   <xs:element name="Login_AdministradorResponse" type="tns:Login_AdministradorResponse" />
   <xs:element name="recuperar_nombre_rol" type="tns:recuperar_nombre_rol" />
   <xs:element name="recuperar_nombre_rolResponse" type="tns:recuperar_nombre_rolResponse" />
   <xs:element name="recuperar_rol_login" type="tns:recuperar_rol_login" />
   <xs:element name="recuperar_rol_loginResponse" type="tns:recuperar_rol_loginResponse" />
+  <xs:complexType name="Listar_Jefe_Funcionarios_desktop">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="Listar_Jefe_Funcionarios_desktopResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:clListarJefeFuncionario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clListarJefeFuncionario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNaacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="nombreCompleto" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="perfil" type="xs:string" />
+      <xs:element minOccurs="0" name="rol" type="xs:string" />
+      <xs:element minOccurs="0" name="rut" type="xs:string" />
+      <xs:element minOccurs="0" name="sexo" type="xs:string" />
+      <xs:element name="telefono" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="recuperar_rol_login">
     <xs:sequence>
       <xs:element minOccurs="0" name="user" type="tns:clUsuario" />
@@ -23,16 +47,6 @@
       <xs:element name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="recuperar_nombre_rol">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="user" type="tns:clUsuario" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="recuperar_nombre_rolResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="Login_Administrador">
     <xs:sequence>
       <xs:element minOccurs="0" name="user" type="tns:clUsuario" />
@@ -41,6 +55,16 @@
   <xs:complexType name="Login_AdministradorResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recuperar_nombre_rol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="user" type="tns:clUsuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recuperar_nombre_rolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

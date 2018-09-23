@@ -30,11 +30,9 @@
         {
             this.btnTitulo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelContencion = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -43,14 +41,16 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.btnRefrescar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnTitulo.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefrescar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // btnTitulo
@@ -80,15 +80,15 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel2
+            // panelContencion
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel2.Location = new System.Drawing.Point(0, 185);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(804, 297);
-            this.panel2.TabIndex = 2;
+            this.panelContencion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.panelContencion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContencion.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panelContencion.Location = new System.Drawing.Point(0, 185);
+            this.panelContencion.Name = "panelContencion";
+            this.panelContencion.Size = new System.Drawing.Size(804, 297);
+            this.panelContencion.TabIndex = 2;
             // 
             // label1
             // 
@@ -102,29 +102,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Formulario Funcionario";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(56)))), ((int)(((byte)(126)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::WFBS.Presentacion.Properties.Resources.icons8_hombre_de_negocios_961;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(10, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(299, 146);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Funcionario";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.button7);
@@ -135,28 +112,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(131, 146);
             this.panel4.TabIndex = 17;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(56)))), ((int)(((byte)(126)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::WFBS.Presentacion.Properties.Resources.icons8_gerente_96;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(316, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(341, 146);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "Jefe Funcionario";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -245,17 +200,50 @@
             this.panel7.Size = new System.Drawing.Size(10, 29);
             this.panel7.TabIndex = 1;
             // 
-            // btnCerrar
+            // button3
             // 
-            this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnCerrar.Image = global::WFBS.Presentacion.Properties.Resources.icons8_cerrar_ventana_24_2_;
-            this.btnCerrar.Location = new System.Drawing.Point(10, 0);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(25, 29);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnCerrar.TabIndex = 2;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(56)))), ((int)(((byte)(126)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::WFBS.Presentacion.Properties.Resources.icons8_hombre_de_negocios_961;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(10, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(299, 146);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Funcionario";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(56)))), ((int)(((byte)(126)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::WFBS.Presentacion.Properties.Resources.icons8_gerente_96;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(316, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(341, 146);
+            this.button4.TabIndex = 18;
+            this.button4.Text = "Jefe Funcionario";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // btnRefrescar
             // 
@@ -268,12 +256,24 @@
             this.btnRefrescar.TabIndex = 3;
             this.btnRefrescar.TabStop = false;
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCerrar.Image = global::WFBS.Presentacion.Properties.Resources.icons8_cerrar_ventana_24_2_;
+            this.btnCerrar.Location = new System.Drawing.Point(10, 0);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(25, 29);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnCerrar.TabIndex = 2;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // FuncionarioPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 482);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelContencion);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -284,8 +284,8 @@
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefrescar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -295,7 +295,7 @@
         private System.Windows.Forms.Panel btnTitulo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelContencion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel4;

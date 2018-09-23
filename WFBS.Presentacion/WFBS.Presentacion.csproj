@@ -61,6 +61,12 @@
     <Compile Include="Formularios\Funcionarios\FuncionarioPrincipal.Designer.cs">
       <DependentUpon>FuncionarioPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Funcionarios\Vistas\FormularioListarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funcionarios\Vistas\FormularioListarFuncionario.Designer.cs">
+      <DependentUpon>FormularioListarFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Funcionarios\FuncionarioPrincipal.resx">
       <DependentUpon>FuncionarioPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funcionarios\Vistas\FormularioListarFuncionario.resx">
+      <DependentUpon>FormularioListarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -106,6 +115,12 @@
     <None Include="Service References\WSReference\MainWS.wsdl" />
     <None Include="Service References\WSReference\MainWS.xsd">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSReference\WFBS.Presentacion.WSReference.clListarJefeFuncionario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSReference\WFBS.Presentacion.WSReference.Listar_Jefe_Funcionarios_desktopResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\WSReference\WFBS.Presentacion.WSReference.Login_AdministradorResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -218,6 +233,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-sincronizar-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\Funcionarios\Vistas\Funcionario\" />
+    <Folder Include="Formularios\Funcionarios\Vistas\Jefe Funcionario\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
